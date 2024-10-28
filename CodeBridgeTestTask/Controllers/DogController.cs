@@ -20,11 +20,11 @@ namespace CodeBridgeTestTask.Controllers
         }
 
 
-        //[HttpGet]
-        //public IActionResult GetPing()
-        //{
-        //    return Ok("Dogshouseservice.Version1.0.1");
-        //}
+        [HttpGet]
+        public IActionResult GetPing()
+        {
+            return Ok("Dogshouseservice.Version1.0.1");
+        }
 
         [HttpPost("CreateDog")]
         public async Task<IActionResult> CreateDog([FromBody] CreateDogCommand command)
